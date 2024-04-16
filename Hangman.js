@@ -211,7 +211,7 @@ class Hangman {
   
       // Check ob das spiel noch läuft
     isGameOn() {
-      // keine Versuche mehr übrig (Emoji Länge)
+      // keine Versuche mehr übrig (Emoji volle Länge)
       if (this.attempts === 0) {
         return false;
       }
@@ -223,13 +223,13 @@ class Hangman {
       return true;
     }
   
-    // Reset am Ende bei Continue y für neuen Versuch
+    // Reset am Ende bei Continue für neuen Versuch
     reset() {
       // Liste der geratenen Buchstaben leeren
       this.knownLettersList = [];
       // Versuchanzahl wieder auf Emoji Länge hochsetzen
       this.attempts = this.Emoji.length;
-      // Ein neues Wort ziehen 
+      // neues Wort ziehen 
       this.currentWord = this.getSecretWord(this.category);
     }
   }
