@@ -14,15 +14,15 @@ const game = new Hangman();
 console.clear();
 
 // User Input Wahl der Kategorie
-let category = prompt("Choose a categorie : movies or games ");
+let category = prompt("Choose a categorie --> movies or games : ");
 // Wenn der Input nicht passt erneute Anfrage
 while (!game.setCategory(category)) {
-  category = prompt("Type one of these: movies or games ");
+  category = prompt("Type one of these, movies or games : ");
 }
 // Platz um das Spiel zu rendern 
 console.clear();
 // Darstellung vom spiel 
-console.log(`\n${game.renderWord()}\n`);
+console.log(chalk.bold.green(`\n${game.renderWord()}\n`));
 console.log(chalk.bold.magenta(`\n${game.renderEmoji()}\n`));
 
 // while loop bis das Spiel beendet ist 
@@ -36,7 +36,7 @@ while (game.isGameOn()) {
 // Aktualisierung der Darstellung nach Validierung
   game.update(guess);
   console.clear();
-  console.log(`\n${game.renderWord()}\n`);
+  console.log(chalk.bold.green(`\n${game.renderWord()}\n`));
   console.log(chalk.bold.magenta(`\n${game.renderEmoji()}\n`));
 // Nach gewonnenen Spiel soll die Statistik aktualisiert werden
 // - Win Check
@@ -48,7 +48,7 @@ while (game.isGameOn()) {
     game.updateStats(isWinning);
     // Check ob gewonnen und Lösungsausgabe wenn nicht
     if (isWinning) {
-      console.log("YOU WIN!!!\n");
+      console.log(chalk.bold.yellow("YOU WIN!!!\n"));
     } else {
       console.log("Better luck next time it was: ", game.currentWord);
     }
@@ -65,12 +65,12 @@ while (game.isGameOn()) {
     else {
       console.clear();
       console.log(chalk.bold.yellowBright(`\n${game.getFormattedStats()}\n`));
-      console.log("Bye have a great time\n");
+      console.log(chalk.bold.blue("Bye have a great time..!\n"));
     }
   }
 }
 
-console.log(chalk.yellow(`-- THE END --\n`));
+console.log(chalk.greenBright(`-- THE END --\n`));
 
 // To Do
 

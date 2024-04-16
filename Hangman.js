@@ -1,5 +1,5 @@
 // Version 1
-// Die Haupt-Klasse und darin alle Methoden für das Spiel
+// DIE Haupt-Klasse und darin alle Methoden für das Spiel
 class Hangman {
     constructor() {
       // Läuft das Spiel noch
@@ -64,24 +64,26 @@ class Hangman {
           "Super Mario",
           "Tetris",
           "Minecraft",
-          "Grand Theft Auto V",
-          "The Witcher III Wild Hunt",
+          "Grand Theft Auto Five",
+          "The Witcher Three Wild Hunt",
           "Dark Souls",
           "Red Dead Redemption",
-          "Half Life II",
+          "Half Life Two",
           "Portal",
           "Final Fantasy",
+          "Battlefield",
           "Super Mario Bros",
           "Fallout New Vegas",
           "Elden Ring",
           "Halo the Master Chief Edition",
           "Tomb Raider",
-          "Resident Evil IV",
-          "Assassins Creed IV Black Flag",
-          "Need for Speed Underground II",
+          "Resident Evil Four",
+          "Borderlands Two",
+          "Assassins Creed Four Black Flag",
+          "Need for Speed Underground Two",
           "Pokemon Red",
           "Counter-Strike Global Offensive",
-          "The Elder Scrolls V Skyrim",
+          "The Elder Scrolls Five Skyrim",
           "Metal Gear Solid",
           "World of Warcraft",
           "Pac-Man",
@@ -182,6 +184,7 @@ class Hangman {
       // das Emoji als Array in eine Variable
       const Emoji = this.Emoji.split("");
       // die Länge soll sich dynamisch verändern je noch Versuchen
+      // Alle Versuche über gibt also ein leeres Emoji
       return Emoji.slice(0, Emoji.length - this.attempts).join("");
     }
   
