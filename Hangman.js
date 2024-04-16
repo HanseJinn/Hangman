@@ -1,21 +1,21 @@
-// hier Erstelle ich Methoden und die
-
+// Version 1
+// Die Haupt-Klasse und darin alle Methoden für das Spiel
 class Hangman {
     constructor() {
       // Läuft das Spiel noch
       this.gameOn = true;
       // geratene Buchstaben Liste
       this.knownLettersList = [];
-      // bereits gespielte Worte Stash
+      // bereits gespielte Worte Liste
       this.playedWords = {
         movies: [],
         games: [],
       };
       // das komplette Emoji
       this.Emoji = "¯\\_(:/)_/¯";
-      // Versuch Counter
+      // Versuch Counter (entspricht Emoji Länge)
       this.attempts = this.Emoji.length;
-      // Statistik für gewonnene Spiele
+      // Statistik-Stash für gewonnene Spiele
       this.stats = [];
       // Auswählbare Optionen als Kategorien 
       this.options = {
@@ -88,10 +88,8 @@ class Hangman {
         ],
       };
       // Bestimmung der Kategorien mit Auswahl des ersten Worts 
-      // Zum zufälligen Auswürfeln später 
+      // Anhand aller vorhandenen Kategorien(keys)
       this.category = Object.keys(this.options)[0];
-      // Das aktuelle Wort nach der zufälligen Auswahl
-      this.currentWord = this.getSecretWord(this.category);
     }
   
     // Kategorie Auswahl
@@ -100,19 +98,21 @@ class Hangman {
       if (!this.options.hasOwnProperty(category)) {
         return false;
       }
-      // festlegung der Kategorie für zukünftige Methoden 
+      // Test ob die Kategorie gesetzt werden kann
       this.category = category;
-  
+      // Ein neues Wort aus der Kategorie
+      this.currentWord = this.getSecretWord(this.category);
       return true;
     }
   
     // zufällige Auswahl eines geheimen Wortes
     getSecretWord(category) {
-      // zufälliger Index bezogen aus der Array Länge
+      // zufälliger Index bezogen aus der Kategorie Länge
       let randomIndex = Math.floor(Math.random() * this.options[category].length);
       // Zufälliges Wort aus der gewählten Katgorie
       let secretWord = this.options[category][randomIndex];
-      // Wenn alle Worte gespielt sind Reset
+      // Check ob die Liste der bereits gespielten Worte voll ist
+      // wenn ja wird sie geleert
       if (this.playedWords[this.category] === this.options[this.category]) {
         this.playedWords[this.category] = [];
       }
@@ -148,13 +148,13 @@ class Hangman {
       this.knownLettersList.push(letter.toLowerCase());
   
       // sollte der Buchstabe nicht im aktuellen Wort enthalten sein 
-      // soll sich das Emoji erweitern 
+      // soll ein Versuch abgezogen werden
       if (!this.currentWord.toLowerCase().includes(letter)) {
         this.attempts--;
       }
     }
-  
-      // Format für das zu Ratende Wort 
+
+      // Format/Darstellung für das Wort 
     renderWord() {
       // Aufsplitten in ein Array um map anwenden zu können
       const characters = this.currentWord.split("");
@@ -181,7 +181,7 @@ class Hangman {
     renderEmoji() {
       // das Emoji als Array in eine Variable
       const Emoji = this.Emoji.split("");
-      // die Länge soll sich dynamisch nach vergangenen Versuchen anpassen
+      // die Länge soll sich dynamisch verändern je noch Versuchen
       return Emoji.slice(0, Emoji.length - this.attempts).join("");
     }
   
@@ -235,3 +235,5 @@ class Hangman {
   }
   
   module.exports = Hangman;
+
+ 

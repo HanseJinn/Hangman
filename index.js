@@ -71,3 +71,11 @@ while (game.isGameOn()) {
 }
 
 console.log(chalk.yellow(`-- THE END --\n`));
+
+// To Do
+
+// Auf Website bringen 
+
+// Games-Auswahl Bug beheben
+
+// Draw Io Algorithmus zeichnen
