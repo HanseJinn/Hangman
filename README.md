@@ -10,5 +10,5 @@
 8. Jeder Film/ jedes Spiel kommt einmal dran, wenn alle erraten Strg C zum verlassen
 9. Jede andere Eingabe lässt dich das Spiel verlassen
 
-*Viel Vergnügen x]*
+*Viel Vergnügen :]*
 

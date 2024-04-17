@@ -19,29 +19,29 @@ let category = prompt("Choose a categorie --> movies or games : ");
 while (!game.setCategory(category)) {
   category = prompt("Type one of these, movies or games : ");
 }
-// Platz um das Spiel zu rendern 
+// Platz um das Spiel zu rendern
 console.clear();
-// Darstellung vom spiel 
+// Darstellung vom spiel
 console.log(chalk.bold.green(`\n${game.renderWord()}\n`));
 console.log(chalk.bold.magenta(`\n${game.renderEmoji()}\n`));
 
-// while loop bis das Spiel beendet ist 
+// while loop bis das Spiel beendet ist
 while (game.isGameOn()) {
   // Aufruf zur Buchstaben Eingabe
   let guess = prompt("Guess a letter ");
-// Validierung und erneute abfrage bei Wiederholung/Ungültiger Eingabe
+  // Validierung und erneute abfrage bei Wiederholung/Ungültiger Eingabe
   while (!game.validateGuess(guess)) {
     guess = prompt("Comon one letter ");
   }
-// Aktualisierung der Darstellung nach Validierung
+  // Aktualisierung der Darstellung nach Validierung
   game.update(guess);
   console.clear();
   console.log(chalk.bold.green(`\n${game.renderWord()}\n`));
   console.log(chalk.bold.magenta(`\n${game.renderEmoji()}\n`));
-// Nach gewonnenen Spiel soll die Statistik aktualisiert werden
-// - Win Check
-// - Continue Check
-// - Reset
+  // Nach gewonnenen Spiel soll die Statistik aktualisiert werden
+  // - Win Check
+  // - Continue Check
+  // - Reset
 
   if (!game.isGameOn()) {
     const isWinning = game.isWinning();
@@ -60,7 +60,7 @@ while (game.isGameOn()) {
       console.clear();
       console.log(`\n${game.renderWord()}\n`);
       console.log(chalk.bold.magenta(`\n${game.renderEmoji()}\n`));
-    } 
+    }
     // Ansonsten die Statistik ausgeben und Verabschieden
     else {
       console.clear();
@@ -72,10 +72,12 @@ while (game.isGameOn()) {
 
 console.log(chalk.greenBright(`-- THE END --\n`));
 
-// To Do
+// To Do:
 
-// Auf Website bringen 
+// Auf Website bringen
 
 // Games-Auswahl Bug beheben
 
-// Draw Io Algorithmus zeichnen
+// Komplettes Array leer no Response Bug beheben
+
+// geratene Buchstaben anzeigen
