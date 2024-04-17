@@ -7,7 +7,7 @@
 5. Versuche das Wort voll auszufüllen
 6. Liegst du zu oft Flach komplettiert sich das Emoji und du hast Verloren
 7. Bei der continue Anfrage tippe y um erneut in der selben Kategorie zu raten
-9. Jede andere Eingabe lässt dich das Spiel verlassen
+9. Jede andere Eingabe lässt dich das Spiel verlassen und gibt dir deine Stats
 
 *Viel Vergnügen :]*
 
