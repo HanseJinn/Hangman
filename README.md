@@ -6,8 +6,7 @@
 4. Rate mit einem Buchstaben | Selten Zeichen
 5. Versuche das Wort voll auszufüllen
 6. Liegst du zu oft Flach komplettiert sich das Emoji und du hast Verloren
-7. Bei der Continue Anfrage tippe y um erneut in der selben Kategorie zu raten
-8. Jeder Film/ jedes Spiel kommt einmal dran, wenn alle erraten Strg C zum verlassen
+7. Bei der continue Anfrage tippe y um erneut in der selben Kategorie zu raten
 9. Jede andere Eingabe lässt dich das Spiel verlassen
 
 *Viel Vergnügen :]*

@@ -74,10 +74,10 @@ console.log(chalk.greenBright(`-- THE END --\n`));
 
 // To Do:
 
-// Auf Website bringen
+// Auf Website bringen .gestrichen
 
-// Games-Auswahl Bug beheben
+// Games-Auswahl Bug beheben .done
 
-// Komplettes Array leer no Response Bug beheben
+// Komplettes Array leer no Response Bug beheben .in Arbeit
 
-// geratene Buchstaben anzeigen
+// geratene Buchstaben anzeigen .coming soon
