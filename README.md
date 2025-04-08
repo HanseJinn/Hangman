@@ -1,13 +1,19 @@
-**Anleitung** 
+Instructions
+Open the console in the Hangman folder.
 
-1. Im Hangman Ordner öffne die Konsole
-2. Tippe ein node index.js
-3. Wähle movies oder games und tippe deine Auswahl ein
-4. Rate mit einem Buchstaben | Selten Zeichen
-5. Versuche das Wort voll auszufüllen
-6. Liegst du zu oft daneben komplettiert sich das Emoji und du hast Verloren
-7. Bei der continue Anfrage tippe y um erneut in der selben Kategorie zu raten
-9. Jede andere Eingabe lässt dich das Spiel verlassen und gibt dir deine Stats
+Type node index.js and press Enter.
 
-*Viel Vergnügen :]*
+Choose either movies or games by typing your selection.
+
+Guess a letter, or use a rare character if you prefer.
+
+Try to guess the entire word before the hangman figure is fully drawn.
+
+If you make too many incorrect guesses, the emoji will complete, and you'll lose the game.
+
+When asked if you want to continue, type y to keep guessing within the same category.
+
+Any other input will exit the game and display your stats.
+
+Have fun and good luck!
 
