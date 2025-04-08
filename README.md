@@ -1,20 +1,28 @@
-**Instructions**
+## **Instructions**
 
-Open the console in the Hangman folder.
+1. **Open the console** in the `Hangman` folder.
 
-Type node index.js and press Enter.
+2. **Run the game**:
+   - Type `node index.js` and press Enter.
 
-Choose either movies or games by typing your selection.
+3. **Choose a category**:
+   - Select either **Movies** or **Games** by typing your choice.
 
-Guess a letter, or use a rare character if you prefer.
+4. **Start guessing**:
+   - Guess a letter, or feel free to use a rare character if you prefer.
 
-Try to guess the entire word before the hangman figure is fully drawn.
+5. **Fill in the word**:
+   - Try to guess the entire word before the hangman emoji is fully drawn.
 
-If you make too many incorrect guesses, the emoji will complete, and you'll lose the game.
+6. **Watch out for mistakes**:
+   - If you make too many incorrect guesses, the hangman emoji will complete, and you'll lose the game.
 
-When asked if you want to continue, type y to keep guessing within the same category.
+7. **Continue or Exit**:
+   - When asked if you want to continue, type **y** to keep guessing in the same category.
+   - Any other input will exit the game and show your stats.
 
-Any other input will exit the game and display your stats.
+---
 
-Have fun and good luck!
+### 🎮 **Have fun and good luck!**
+
 
