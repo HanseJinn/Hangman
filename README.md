@@ -1,4 +1,5 @@
-Instructions
+**Instructions**
+
 Open the console in the Hangman folder.
 
 Type node index.js and press Enter.
