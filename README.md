@@ -6,7 +6,7 @@
    - Type `node index.js` and press Enter.
 
 3. **Choose a category**:
-   - Select either **Movies** or **Games** by typing your choice.
+   - Select either **movies** or **games** by typing your choice.
 
 4. **Start guessing**:
    - Guess a letter, or feel free to use a rare character if you prefer.
